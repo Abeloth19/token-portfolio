@@ -1,4 +1,4 @@
-const BASE_URL = '/api/v3'
+const BASE_URL = import.meta.env.PROD ? 'https://api.coingecko.com/api/v3' : '/api/v3'
 
 export interface TokenPrice {
   id: string
